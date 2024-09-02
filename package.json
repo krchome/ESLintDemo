@@ -4,12 +4,21 @@
     "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.9.0",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
     "prettier": "^3.3.3"
   },
   "scripts": {
-    "lint": "eslint ."   
+    "lint": "eslint .",
+    "prepare": "husky"
   },
-  
+  "lint-staged": {
+    "*.{js}": [
+      "eslint",
+      "prettier --check"
+    ]
+  },
+
   "!node_modules/**/*": "echo 'Skipping node_modules'",
   "*.{json,md}": "prettier --write"
 }

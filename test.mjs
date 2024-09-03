@@ -3,10 +3,10 @@
 // Function to calculate the sum of two numbers
 function addNumbers(a, b) {
   // Check if the inputs are numbers
-  if (typeof a !== 'number' || typeof b !== 'number') {
+  if (typeof a !== "number" || typeof b !== "number") {
     // String with double quotes
-    console.log('Both arguments must be numbers'); // Logging with double quotes
-    return;
+    console.log("Both arguments must be numbers") // Logging with double quotes
+    return
   }
 
   // Calculate the sum

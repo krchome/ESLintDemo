@@ -16,6 +16,7 @@ function addNumbers(a, b) {
   return sum;
 }
 
+
 // Function to print the result
 function printResult(result) {
   console.log('Result:', result); // Logging with double quotes
